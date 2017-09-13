@@ -1,0 +1,249 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXPasswordField?>
+<?import com.jfoenix.controls.JFXProgressBar?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import java.net.URL?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.effect.Glow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" fx:id="mainAnchor" maxHeight="480.0" maxWidth="852.0" minHeight="480.0" minWidth="852.0" prefHeight="475.0" prefWidth="845.0" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="app.FXMLDocumentController">
+    <children>
+      <Pane fx:id="pane4" prefHeight="480.0" prefWidth="852.0" visible="false">
+         <children>
+            <ImageView fitHeight="480.0" fitWidth="852.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@images/loto_3.jpg" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="137.0" fitWidth="275.0" layoutX="45.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@images/yln.png" />
+               </image>
+            </ImageView>
+            <HBox layoutX="316.0" layoutY="71.0">
+               <children>
+                  <TextField fx:id="txtfield_num1" alignment="CENTER" editable="false" prefHeight="50.0" prefWidth="50.0" style="-fx-background-color: #6495ED;" />
+                  <TextField fx:id="txtfield_num2" alignment="CENTER" editable="false" prefHeight="50.0" prefWidth="50.0" style="-fx-background-color: #6495ED;" />
+                  <TextField fx:id="txtfield_num3" alignment="CENTER" editable="false" prefHeight="50.0" prefWidth="50.0" style="-fx-background-color: #6495ED;" />
+                  <TextField fx:id="txtfield_num4" alignment="CENTER" editable="false" prefHeight="50.0" prefWidth="50.0" style="-fx-background-color: #6495ED;" />
+                  <TextField fx:id="txtfield_num5" alignment="CENTER" editable="false" prefHeight="50.0" prefWidth="50.0" style="-fx-background-color: #6495ED;" />
+                  <TextField fx:id="txtfield_num6" alignment="CENTER" editable="false" prefHeight="50.0" prefWidth="50.0" style="-fx-background-color: #6495ED;" />
+               </children>
+            </HBox>
+            <ImageView fitHeight="148.0" fitWidth="282.0" layoutX="37.0" layoutY="153.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@images/wn.png" />
+               </image>
+            </ImageView>
+            <HBox layoutX="316.0" layoutY="201.0">
+               <children>
+                  <TextField fx:id="win_rand1" alignment="CENTER" editable="false" prefHeight="50.0" prefWidth="50.0" style="-fx-background-color: #6495ED;" />
+                  <TextField fx:id="win_rand2" alignment="CENTER" editable="false" prefHeight="50.0" prefWidth="50.0" style="-fx-background-color: #6495ED;" />
+                  <TextField fx:id="win_rand3" alignment="CENTER" editable="false" prefHeight="50.0" prefWidth="50.0" style="-fx-background-color: #6495ED;" />
+                  <TextField fx:id="win_rand4" alignment="CENTER" editable="false" prefHeight="50.0" prefWidth="50.0" style="-fx-background-color: #6495ED;" />
+                  <TextField fx:id="win_rand5" alignment="CENTER" editable="false" prefHeight="50.0" prefWidth="50.0" style="-fx-background-color: #6495ED;" />
+                  <TextField fx:id="win_rand6" alignment="CENTER" editable="false" prefHeight="50.0" prefWidth="50.0" style="-fx-background-color: #6495ED;" />
+               </children>
+            </HBox>
+            <Label fx:id="rezon" alignment="CENTER" layoutX="249.0" layoutY="362.0" prefHeight="50.0" prefWidth="50.0" style="-fx-background-color: #6495ED; -fx-background-radius: 25px;">
+               <font>
+                  <Font name="Consolas Bold" size="12.0" />
+               </font></Label>
+            <ImageView fitHeight="137.0" fitWidth="263.0" layoutX="45.0" layoutY="282.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@images/ysis.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="147.0" fitWidth="307.0" layoutX="407.0" layoutY="251.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@images/yw.png" />
+               </image>
+            </ImageView>
+            <Label fx:id="won" alignment="CENTER" layoutX="654.0" layoutY="325.0" prefHeight="50.0" prefWidth="170.0" style="-fx-background-color: #6495ED; -fx-background-radius: 25px;">
+               <font>
+                  <Font name="Consolas Bold" size="12.0" />
+               </font></Label>
+            <Button fx:id="logout" layoutX="698.0" layoutY="412.0" mnemonicParsing="false" onAction="#LogOut" prefHeight="42.0" prefWidth="115.0" stylesheets="@nxt.css" text="Logout">
+               <font>
+                  <Font name="Consolas Bold" size="12.0" />
+               </font>
+            </Button>
+            <Button fx:id="retry" layoutX="491.0" layoutY="412.0" mnemonicParsing="false" onAction="#reTry" prefHeight="42.0" prefWidth="115.0" text="Retry?">
+               <stylesheets>
+                  <URL value="@play.css" />
+                  <URL value="@button.css" />
+                  <URL value="@nxt.css" />
+               </stylesheets>
+            </Button>
+         </children>
+      </Pane>
+      <Pane fx:id="pane3" prefHeight="480.0" prefWidth="852.0" visible="false">
+         <children>
+            <ImageView fitHeight="480.0" fitWidth="852.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@images/loto_2.jpg" />
+               </image></ImageView>
+            <Label opacity="0.2" prefHeight="480.0" prefWidth="852.0" style="-fx-background-color: #000000;" />
+            <ImageView fitHeight="148.0" fitWidth="275.0" layoutX="23.0" layoutY="-4.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@images/tc.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="663.0" layoutY="-7.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@images/starr.png" />
+               </image>
+            </ImageView>
+            <GridPane fx:id="grid" alignment="CENTER" gridLinesVisible="true" layoutX="86.0" layoutY="139.0" prefHeight="281.0" prefWidth="307.0" style="-fx-background-color: #d86e3a; -fx-background-radius: 5px;">
+              <columnConstraints>
+                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+              </columnConstraints>
+              <rowConstraints>
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+              </rowConstraints>
+            </GridPane>
+            <TextField fx:id="moneyfill" alignment="CENTER" editable="false" layoutX="298.0" layoutY="79.0" prefHeight="29.0" prefWidth="216.0" style="-fx-background-color: #00BFFF; -fx-background-radius: 5px;">
+               <font>
+                  <Font name="Ravie" size="15.0" />
+               </font>
+            </TextField>
+            <JFXButton fx:id="next" layoutX="592.0" layoutY="299.0" onAction="#nexttoDo" prefHeight="50.0" prefWidth="143.0" stylesheets="@nxt.css" text="CHOOSE" textFill="WHITE" />
+            <ImageView fitHeight="231.0" fitWidth="317.0" layoutX="406.0" layoutY="127.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@images/cyln.png" />
+               </image>
+            </ImageView>
+         </children></Pane>
+      <Pane fx:id="pane2" prefHeight="480.0" prefWidth="852.0" visible="false">
+         <children>
+            <ImageView fitHeight="487.0" fitWidth="852.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@images/loto_1.jpg" />
+               </image>
+            </ImageView>
+            <Label layoutX="-2.0" opacity="0.6" prefHeight="480.0" prefWidth="859.0" style="-fx-background-color: #0f0f0f; -fx-background-radius: 15px;" />
+            <JFXButton fx:id="play" layoutX="664.0" layoutY="413.0" onAction="#playonAction" prefHeight="39.0" prefWidth="155.0" ripplerFill="BLACK" style="-fx-background-radius: 5px;" stylesheets="@nxt.css" text="START" textFill="WHITE">
+               <effect>
+                  <Glow level="1.0" />
+               </effect></JFXButton>
+            <TextArea editable="false" layoutX="14.0" layoutY="176.0" prefHeight="137.0" prefWidth="323.0" text="Welcome to DAMN's Millionare Matchmaker v 1.0&#10;______________________________________________&#10;&#10;We are proud to present you this game in hope&#10;that you will enjoy in it!&#10;&#10;If you really want to be Millionare you must&#10;try this game and get your rewards." visible="false">
+               <font>
+                  <Font name="Consolas Bold" size="12.0" />
+               </font>
+            </TextArea>
+            <TextArea editable="false" layoutX="566.0" layoutY="176.0" prefHeight="137.0" prefWidth="263.0" text="             TODAY's ODDS&#10;_____________________________________&#10;&#10;       2 CORRECT = 2x REWARD&#10;       3 CORRECT = 4x REWARD&#10;       4 CORRECT = 15x REWARD&#10;       5 CORRECT = 75X REWARD&#10;       6 CORRECT = 1.000.000 $" visible="false">
+               <font>
+                  <Font name="Consolas Bold Italic" size="12.0" />
+               </font>
+            </TextArea>
+            <ImageView fitHeight="209.0" fitWidth="347.0" layoutX="45.0" layoutY="-5.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@images/about.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="307.0" fitWidth="401.0" layoutX="34.0" layoutY="131.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@images/try.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="314.0" fitWidth="389.0" layoutX="440.0" layoutY="112.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@images/odds.png" />
+               </image>
+            </ImageView>
+         </children>
+      </Pane>
+      <Pane fx:id="pane1" prefHeight="480.0" prefWidth="852.0">
+         <children>
+            <ImageView fitHeight="480.0" fitWidth="852.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@images/login_lottery.jpg" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="307.0" fitWidth="510.0" layoutX="24.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@images/damn_logo.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="238.0" fitWidth="383.0" layoutX="124.0" layoutY="116.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@images/name_logo.png" />
+               </image>
+            </ImageView>
+            <Label layoutX="614.0" layoutY="44.0" opacity="0.3" prefHeight="243.0" prefWidth="208.0" style="-fx-background-color: #f0f0f0; -fx-background-radius: 15px;" />
+            <JFXTextField fx:id="username" focusColor="#efff00" labelFloat="true" layoutX="670.0" layoutY="79.0" prefHeight="10.0" prefWidth="125.0" promptText="Username" style="-fx-background-color: #f0ffff; -fx-background-radius: 2px;" unFocusColor="BLACK" />
+            <JFXPasswordField fx:id="pass" focusColor="#d4ff00" labelFloat="true" layoutX="670.0" layoutY="131.0" prefHeight="25.0" prefWidth="125.0" promptText="********" style="-fx-background-color: #f0ffff; -fx-background-radius: 2px;" unFocusColor="BLACK" />
+            <JFXButton fx:id="dugme" layoutX="692.0" layoutY="212.0" onAction="#uradi_dugme" prefHeight="25.0" prefWidth="82.0" style="-fx-background-radius: 3px;" stylesheets="@button.css" text="Sign In">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font></JFXButton>
+            <Label fx:id="errMsg" alignment="CENTER" layoutX="614.0" layoutY="178.0" prefHeight="17.0" prefWidth="208.0" textFill="RED">
+               <font>
+                  <Font name="Consolas Bold Italic" size="11.0" />
+               </font>
+            </Label>
+            <ImageView fitHeight="25.0" fitWidth="26.0" layoutX="640.0" layoutY="79.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@images/user_icn.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="25.0" fitWidth="25.0" layoutX="640.0" layoutY="131.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@images/pass_icn.png" />
+               </image>
+            </ImageView>
+            <Label fx:id="frgt" alignment="CENTER" blendMode="SCREEN" layoutX="671.0" layoutY="248.0" onMouseClicked="#ifForgot" prefHeight="17.0" prefWidth="125.0" text="Forgot password?" textFill="WHITE" textOverrun="LEADING_ELLIPSIS" underline="true">
+               <font>
+                  <Font name="Consolas" size="13.0" />
+               </font>
+               <effect>
+                  <Glow />
+               </effect></Label>
+            <ImageView fitHeight="29.0" fitWidth="50.0" layoutX="638.0" layoutY="242.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@images/forgot_pass.png" />
+               </image></ImageView>
+            <JFXProgressBar layoutX="670.0" layoutY="201.0" prefHeight="4.0" prefWidth="125.0" />
+            <Label layoutX="54.0" layoutY="408.0" opacity="0.3" prefHeight="42.0" prefWidth="155.0" style="-fx-background-color: #f0f0f0; -fx-background-radius: 10px;" />
+            <Button fx:id="aboutbtn" layoutX="98.0" layoutY="413.0" mnemonicParsing="false" onAction="#clickAbout" prefHeight="29.0" prefWidth="102.0" stylesheets="@button.css" text="About">
+               <font>
+                  <Font name="Consolas Bold" size="12.0" />
+               </font>
+            </Button>
+            <ImageView fitHeight="29.0" fitWidth="25.0" layoutX="62.0" layoutY="415.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@images/info.png" />
+               </image>
+               <effect>
+                  <DropShadow />
+               </effect>
+            </ImageView>
+         </children>
+      </Pane>
+    </children>
+</AnchorPane>

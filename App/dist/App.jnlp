@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<jnlp spec="1.0" xmlns:jfx="http://javafx.com" href="App.jnlp">
+  <information>
+    <title>App</title>
+    <vendor>alex1</vendor>
+    <description>null</description>
+    <offline-allowed/>
+  </information>
+  <resources>
+    <j2se version="1.6+" href="http://java.sun.com/products/autodl/j2se"/>
+    <jar href="App.jar" size="836949" download="eager" />
+    <jar href="lib\jfoenix-0.0.0-SNAPSHOT-retrolambda.jar" size="2413314" download="eager" />
+    <jar href="lib\jfoenix.jar" size="2368735" download="eager" />
+  </resources>
+  <applet-desc  width="800" height="600" main-class="com.javafx.main.NoJavaFXFallback"  name="App" >
+    <param name="requiredFXVersion" value="8.0+"/>
+  </applet-desc>
+  <jfx:javafx-desc  width="800" height="600" main-class="app.App"  name="App" />
+  <update check="always"/>
+</jnlp>
